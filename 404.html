@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="content-security-policy" content="">
+		<link rel="modulepreload" href="/ess-template/_app/immutable/entry/start.5f853bbe.js">
+		<link rel="modulepreload" href="/ess-template/_app/immutable/chunks/index.55d451b5.js">
+		<link rel="modulepreload" href="/ess-template/_app/immutable/chunks/singletons.b3fa4d40.js">
+		<link rel="modulepreload" href="/ess-template/_app/immutable/chunks/paths.7fd8b6af.js">
+		<link rel="modulepreload" href="/ess-template/_app/immutable/entry/app.8d410516.js">
+	</head>
+	<body>
+		<div id="svelte">
+			<script>
+				{
+					__sveltekit_hlod0b = {
+						assets: "/ess-template",
+						base: "/ess-template",
+						env: {"PUBLIC_APP_PATH":""}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/ess-template/_app/immutable/entry/start.5f853bbe.js"),
+						import("/ess-template/_app/immutable/entry/app.8d410516.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
