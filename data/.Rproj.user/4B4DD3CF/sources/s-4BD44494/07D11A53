@@ -1,0 +1,26 @@
+{
+    "id": "07D11A53",
+    "path": "D:/health_index_2021_update/health_index_2021/health_index_R_processing/2-createDistributionData.R",
+    "project_path": null,
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1688499216253.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "49,128",
+        "scrollLine": "35"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1686223335,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1686223335,
+    "read_only": false,
+    "read_only_alternatives": []
+}
