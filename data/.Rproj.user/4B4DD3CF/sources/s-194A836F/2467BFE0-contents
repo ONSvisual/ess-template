@@ -1,0 +1,59 @@
+library(tidyverse)
+library(jsonlite)
+library(stringr)
+library(data.table)
+
+library(tidyverse)
+library(readxl)
+
+config_indicators <- read_csv("./config-data/config-indicators.csv")
+areas <- read_csv("./config-data/areas.csv")
+
+latest_year_data <- data.frame(areacd=character(),
+                                code=character(),
+                                year=double(),
+                                value=double(), 
+                                stringsAsFactors=FALSE)
+
+for (row in 1:nrow(config_indicators)) {
+  
+  indicator_code <- config_indicators[row, "code"]
+
+  indicator_data <- read_csv(paste0("./csv-preprocess/", indicator_code ,".csv"))
+  
+  list_of_years <- as.numeric(unlist(colnames(indicator_data)[-1]))
+  latest_year <- max(list_of_years)
+  config_indicators[row, "latestYear"] <- latest_year
+  
+  default_initial_year <- as.numeric(config_indicators[row, "defaultInitialYear"])
+  
+  flattened_indicator_data <- indicator_data %>%
+    pivot_longer(!areacd , names_to = "year", values_to = "value")
+    
+  indicator_latest_year_data <- flattened_indicator_data %>%
+    filter(year == latest_year) %>%
+    mutate(codeID = config_indicators[row, "id"]$id)
+  
+  latest_year_data <- rbind(latest_year_data, indicator_latest_year_data)
+  
+  indicator_initial_year_data <- flattened_indicator_data %>%
+    filter(year == default_initial_year)
+  
+  if (nrow(indicator_initial_year_data) > 0) {
+  
+  write.csv(indicator_initial_year_data, paste0("./csv/initial-year/",indicator_code,".csv"), row.names = FALSE)
+    
+  }
+  
+  indicator_other_year_data <- flattened_indicator_data %>%
+    filter(!year %in% c(latest_year, default_initial_year))
+  
+  if (nrow(indicator_other_year_data) > 0) {
+
+  write.csv(indicator_other_year_data, paste0("./csv/other-years/",indicator_code,".csv"), row.names = FALSE)
+    
+  }
+
+}
+
+write.csv(latest_year_data, paste0("./csv/latest-year/data.csv"), row.names = FALSE)
