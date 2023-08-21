@@ -8,7 +8,7 @@ id,code,label,unit,highEqualsGood,prefix,suffix,subText,defaultInitialYear,sente
 7,gva_hour,Gross value added per hour worked,,T,,,,2010,,TRUE,,region,2020
 8,median_age,Median age,,I,,,years,2010,,FALSE,,region,2020
 9,internet_access,Internet access,Percentage of the population with access to the internet,T,,%,,2010,,TRUE,,region,2022
-10,no_qualifications_rate,No qualifications rate,Percentage of the population aged 16-64 without qualifications,F,,%,,2010,,TRUE,,region,2021
+10,no_qualifications_rate,No qualifications rate,Percentage of the population aged 16-64 without qualifications,F,,%,of adults do not hold qualifications,2012,,TRUE,,region,2021
 11,unemployment_rate,Unemployment rate,Percentage of workers unemployment while seeking work,F,,%,,2010,,TRUE,,region,2022
 12,weekly_pay,Gross median weekly pay,,T,pounds,,per week,2010,,TRUE,,region,2022
 13,public_transport_employment_centre,Travel time to nearest employment centre by public transport,"Average time taken to travel to employment centre with 500-4,999 jobs using public transport",F,,,minutes,2010,,TRUE,,region,2019
