@@ -31,6 +31,6 @@ wellbeing,1,Far above median on all well-being metrics,High wellbeing
 wellbeing,2,Slightly above median on all well-being metrics,Slightly above average wellbeing
 wellbeing,3,"Better than median anxiety, worse than median on all other metrics",Low overall wellbeing but above average anxiety
 wellbeing,4,Far below median on all well-being metrics,Low wellbeing
-all,99,Northern Ireland,
-all,999,Scotland,
-all,9999,Wales,
+all,99,Northern Ireland,Northern Ireland
+all,999,Scotland,Scotland
+all,9999,Wales,Wales

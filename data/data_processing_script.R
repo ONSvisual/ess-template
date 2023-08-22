@@ -76,3 +76,5 @@ for (row in 1:nrow(config_indicators)) {
 write.csv(latest_year_data, "./csv/latest-year/data.csv", row.names = FALSE)
 #write.csv(config_indicators, "./config-data/config-indicators.csv", row.names = FALSE, na="")
 write.csv(created_files_log, "./config-data/datasets-log.csv", row.names = FALSE)
+
+#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
