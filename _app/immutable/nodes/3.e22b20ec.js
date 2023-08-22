@@ -1,2 +1,0 @@
-//js
-import{P as e,g as r}from"../chunks/utils.ba81c888.js";import{b as s}from"../chunks/paths.24354129.js";import{L as _}from"../chunks/layout.41233a40.js";const n=e,l="always";async function c({fetch:o,params:t}){const a=await r(`${s}/data/config-data/clusters-lookup.csv`,o);return{params:t,clustersLookup:a}}const p=Object.freeze(Object.defineProperty({__proto__:null,load:c,prerender:n,trailingSlash:l},Symbol.toStringTag,{value:"Module"}));export{_ as component,p as universal};
