@@ -1,0 +1,43 @@
+id,topic,code
+1,connectivity,4g-coverage
+2,economy,additions-to-the-housing-stock
+3,education,aged-16-to-64-years-level-3-or-above-qualifications
+4,education,aged-19-years-and-over-further-education-and-skills-learner-achievements
+5,education,aged-19-years-and-over-further-education-and-skills-participation
+6,wellbeing,annual-personal-wellbeing-estimates-Anxiety mean score (where 10 is 'completely anxious')
+7,wellbeing,annual-personal-wellbeing-estimates-Worthwhile mean score (where 10 is 'completely worthwhile')
+8,wellbeing,annual-personal-wellbeing-estimates-Happiness mean score (where 10 is 'completely happy')
+9,wellbeing,annual-personal-wellbeing-estimates-Satisfaction mean score (where 10 is 'completely satisfied')
+10,education,apprenticeships-achievements
+11,education,apprenticeships-starts
+12,connectivity,average-travel-time-long-cycling
+13,connectivity,average-travel-time-long-driving
+14,connectivity,average-travel-time-long-public transport or walking
+15,health,cancer-diagnosis-at-stage-1-and-2
+16,health,cardiovascular-mortality-considered-preventable-in-persons-aged-under-75-2021-census-population-estimates
+17,education,children-at-expected-level-for-language-by-end-of-early-years-foundation-stage
+18,education,children-at-expected-level-for-literacy-by-end-of-early-years-foundation-stage
+19,education,children-at-expected-level-for-maths-by-end-of-early-years-foundation-stage
+20,health,cigarette-smokers
+21,economy,employment-rate-long-Employment Rate
+22,economy,employment-rate-long-Unemployment Rate
+23,economy,employment-rate-long-Economic Activity Rate
+24,economy,employment-rate-long-Economic Inactivity Rate
+25,health,female-healthy-life-expectancy
+26,health,male-healthy-life-expectancy
+27,education,gcses-and-equivalent-in-english-and-maths-by-age-19
+28,connectivity,gigabit-capable-broadband
+29,economy,gross-disposable-household-income-per-head
+30,economy,gross-median-weekly-pay
+31,economy,gross-value-added-per-hour-worked
+32,crime,homicide-offences
+33,economy,inward-foreign-direct-investment-fdi
+34,health,overweight-adults-aged-18-years-and-over
+35,health,overweight-children-at-reception-age-aged-four-to-five-years
+36,health,overweight-children-at-year-6-age-aged-10-to-11-years
+37,education,persistent-absences-for-all-pupils
+38,education,persistent-absences-for-pupils-eligible-for-free-school-meals
+39,education,persistent-absences-for-pupils-looked-after-by-local-authorities
+40,education,pupils-at-expected-standards-by-end-of-primary-school
+41,education,schools-and-nursery-schools-rated-good-or-outstanding
+42,economy,total-value-of-uk-exports
