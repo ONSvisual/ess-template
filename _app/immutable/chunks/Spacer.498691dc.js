@@ -1,0 +1,2 @@
+//js
+import{S as c,i as r,s as o,k as _,l as p,m as g,h,n as f,p as n,b as m,D as l}from"./index.8ebd40f7.js";function u(i){let e,s=`${i[0]}px`;return{c(){e=_("div"),this.h()},l(t){e=p(t,"DIV",{class:!0}),g(e).forEach(h),this.h()},h(){f(e,"class","spacer-block svelte-58zcgt"),n(e,"height",s)},m(t,a){m(t,e,a)},p(t,[a]){a&1&&s!==(s=`${t[0]}px`)&&n(e,"height",s)},i:l,o:l,d(t){t&&h(e)}}}function d(i,e,s){let{height:t=12}=e;return i.$$set=a=>{"height"in a&&s(0,t=a.height)},[t]}class y extends c{constructor(e){super(),r(this,e,d,u,o,{height:0})}}export{y as S};
