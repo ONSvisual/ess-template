@@ -18,11 +18,11 @@ education,4,"Higher KS2, lower GCSE performance",Good KS2 but low GCSE performan
 education,5,Slightly above median except for FSM absences,Above average except FSM absences
 education,6,Lower on all education metrics,Low education
 education,7,"Lower on all metrics, except FSM and CLA absences","Low education, except school absences"
-education,8,Lower foundation age performance,High health
-skills,1,Above median on all skills metrics,High health
-skills,2,"Above median level 3 or above qualifications, below median apprenticeships and further education",High health
-skills,3,"Above median apprenticeships and further education, below median level 3 or above qualifications",High health
-skills,4,Slightly below median on all skills metrics,High health
+education,8,Lower foundation age performance,Lower foundation age performance
+skills,1,Above median on all skills metrics,Above median on all skills metrics
+skills,2,"Above median level 3 or above qualifications, below median apprenticeships and further education","Above median level 3 or above qualifications, below median apprenticeships and further education"
+skills,3,"Above median apprenticeships and further education, below median level 3 or above qualifications","Above median apprenticeships and further education, below median level 3 or above qualifications"
+skills,4,Slightly below median on all skills metrics,Slightly below median on all skills metrics
 health,1,Above median on all health metrics,High health
 health,2,Broadly median on all health metrics,Average health
 health,3,"Lower overweight adults, higher cardiovascular mortality","Low obesity, high cardiovascular mortality"
