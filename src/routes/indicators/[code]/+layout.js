@@ -32,7 +32,7 @@ export async function load({ fetch, params }) {
         } else {
 
             let data = [];
-
+            console.log(indicator.filename)
             for (var j=0; j < visibleAreas.length; j++) {
 
                 let areaIndicatorData = await getData(`${base}/data/json/area/`+indicator.filename+`/`+visibleAreas[j].areacd+`.json`, fetch);

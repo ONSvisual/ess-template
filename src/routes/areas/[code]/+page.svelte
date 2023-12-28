@@ -3,10 +3,7 @@ import { base } from "$app/paths";
 import { page } from "$app/stores";
 import { getContext } from "svelte";
 import { getName } from "@onsvisual/robo-utils";
-import Titleblock from "$lib/layout/Titleblock.svelte";
-import Headline from "$lib/layout/partial/Headline.svelte";
-import Subhead from "$lib/layout/partial/Subhead.svelte";
-import SectionsWithNav from "$lib/layout/SectionsWithNav.svelte";
+import { Breadcrumb, Titleblock, NavSections, NavSection } from "@onsvisual/svelte-components";
 import AreaNav from "../AreaNav.svelte";
 import Placeholder from "$lib/layout/Placeholder.svelte";
 import { getData} from "$lib/utils";
@@ -74,23 +71,20 @@ $: console.log(sectionsArray)
 </script>
 
 {#if $selectedArea}
-<Titleblock breadcrumb={[{label: "Home", url: "/"}, {label: "Explore subnational statistics", url: `${base}/`}, {label: "Find a local area", url: `${base}/areas`}, {label: $selectedArea.areanm}]}>
-    <Headline>{$selectedArea.areanm}</Headline>
-    <Subhead>Get localised data, insights and trends for {getName($selectedArea, "the")}</Subhead>
+<Breadcrumb links={[{label: "Home", href: "/"}, {label: "Explore subnational statistics", href: `${base}/`}, {label: "Find a local area", href: `${base}/areas`}, {label: $selectedArea.areanm}]} />
+<Titleblock title="{$selectedArea.areanm}">
+    Get localised data, insights and trends for {getName($selectedArea, "the")}
 </Titleblock>
 <AreaNav/>
-<SectionsWithNav contentsLabel="Explore this area">
-    <section title="Key indicators">
-        <h1>Key indicators</h1>
+<NavSections contentsLabel="Explore this area">
+    <NavSection title="Key indicators">
         <KeyIndicators
         data3={data.data3}
         data4={data.data4}></KeyIndicators>
-    </section>
+    </NavSection>
 
     {#each sectionsArray as section, i}
-    <section title={section}>
-        <h1>{section}</h1>
-
+    <NavSection title={section}>
         {#each data.componentsArray.filter((e) => e.section === section) as component, i}
 
         <SelectComparisonAreas
@@ -117,7 +111,7 @@ $: console.log(sectionsArray)
 
         {/each}
 
-    </section>
+    </NavSection>
     {/each}
     <!-- <section title="Demographics">
         <SelectComparisonAreas
@@ -158,14 +152,13 @@ $: console.log(sectionsArray)
         {/if}
         {/each}
     </section> -->
-    <section title="Related areas">
+    <NavSection title="Related areas">
         <Placeholder>Find parent, child and neighbouring areas</Placeholder>
-    </section>
-    <section title="Get the data">
-        <h2 class="ons-u-mt-xl">Get the data</h2>
+    </NavSection>
+    <NavSection title="Get the data">
         <p>Here, you can find information and links to the data.</p>
-    </section>
-</SectionsWithNav>
+    </NavSection>
+</NavSections>
 {/if}
 
 <style>

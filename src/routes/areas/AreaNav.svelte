@@ -3,12 +3,7 @@
     import { goto } from "$app/navigation";
     import { getContext } from "svelte";
     import { countries, regions } from "$lib/config";
-    import Twisty from "$lib/ui/Twisty.svelte";
-    import Content from "$lib/layout/Content.svelte";
-    import Cards from "$lib/layout/Cards.svelte";
-    import Card from "$lib/layout/partial/Card.svelte";
-    import SelectArea from "$lib/ui/SelectArea.svelte";
-    import Spacer from "$lib/layout/Spacer.svelte";
+    import { Container, Twisty, Grid, Select } from "@onsvisual/svelte-components";
 
     export let open = false;
 
@@ -18,23 +13,23 @@
     function doSelect(e) {
         goto(`${base}/areas/${e.detail.areacd}`);
     }
+    console.log(areas);
 </script>
 
-<Content>
+<Container marginBottom={true}>
     <div class="select-container">
-        <SelectArea items={areas} mode="search" placeholder="Find an area name or postcode" on:select={doSelect} autoClear/>
+        <Select options={areas} mode="search" placeholder="Find an area name" labelKey="areanm" idKey="areacd" on:change={doSelect} autoClear/>
     </div>
-    <Twisty label="Browse areas" {open}>
-        <Cards colwidth="narrow">
+    <Twisty title="Browse areas" {open}>
+        <Grid colwidth="narrow">
             {#each parents as parent}
-            <Card blank>
+            <div>
                 <a href="{base}/areas/{parent.code}" class="parent-link">{parent.name}</a>
                 {#each areas.filter(p => p.parentcd === parent.code) as area}
-                <a href="{base}/areas/{area.areacd}">{area.areanm}</a><br/>
+                <a href="{base}/areas/{area.areacd}" class="area-link">{area.areanm}</a>
                 {/each}
-            </Card>
+            </div>
             {/each}
-        </Cards>
+        </Grid>
     </Twisty>
-    <Spacer/>
-</Content>
+</Container>

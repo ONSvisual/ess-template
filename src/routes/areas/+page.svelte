@@ -1,13 +1,11 @@
 <script>
     import { base } from "$app/paths";
-    import Titleblock from "$lib/layout/Titleblock.svelte";
-    import Headline from "$lib/layout/partial/Headline.svelte";
-    import Subhead from "$lib/layout/partial/Subhead.svelte";
+    import { Breadcrumb, Titleblock } from "@onsvisual/svelte-components";
     import AreaNav from "./AreaNav.svelte";
 </script>
 
-<Titleblock breadcrumb={[{label: "Home", url: "/"}, {label: "Explore subnational statistics", url: `${base}/`}, {label: "Find a local area"}]}>
-    <Headline>Find a local area</Headline>
-    <Subhead>Get localised data, insights and trends for local authorities and regions</Subhead>
+<Breadcrumb links={[{label: "Home", href: "/"}, {label: "Explore subnational statistics", href: `${base}/`}, {label: "Find a local area"}]} />
+<Titleblock title="Find a local area">
+    Get localised data, insights and trends for local authorities and regions
 </Titleblock>
 <AreaNav open/>
