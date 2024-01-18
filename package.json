@@ -14,7 +14,8 @@
   },
   "devDependencies": {
     "@onsvisual/robo-utils": "^0.2.6",
-    "@onsvisual/svelte-components": "^0.1.10",
+    "@onsvisual/svelte-charts": "^0.3.4",
+    "@onsvisual/svelte-components": "^0.1.16",
     "@onsvisual/svelte-maps": "^1.0.26",
     "@sveltejs/adapter-static": "^2.0.1",
     "@sveltejs/kit": "^1.0.0",
