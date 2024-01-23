@@ -1,0 +1,2 @@
+//js
+import{P as r}from"../chunks/public.73b3fb0a.js";import"../chunks/paths.15fe8f0b.js";import"../chunks/functions.97df77cc.js";import"../chunks/index.6ae84391.js";import"../chunks/config.d5314ff0.js";import"../chunks/index.1452ad3d.js";import{L as f}from"../chunks/layout.c531a8e5.js";const t=r,e="always";async function a({fetch:n,params:o}){return{areacd:o.code}}const u=Object.freeze(Object.defineProperty({__proto__:null,load:a,prerender:t,trailingSlash:e},Symbol.toStringTag,{value:"Module"}));export{f as component,u as universal};

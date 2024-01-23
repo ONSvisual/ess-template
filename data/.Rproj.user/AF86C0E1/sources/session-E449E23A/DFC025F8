@@ -1,0 +1,26 @@
+{
+    "id": "DFC025F8",
+    "path": "~/Documents/ONS Projects/ess-beta-v13/static/data/data_processing_script.R",
+    "project_path": "data_processing_script.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1705163076221.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "18,39",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1705496115,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1705496115398,
+    "read_only": false,
+    "read_only_alternatives": []
+}

@@ -1,44 +1,4 @@
 areacd,areanm
-K02000001,United Kingdom
-K03000001,Great Britain
-K04000001,England and Wales
-E92000001,England
-N92000002,Northern Ireland
-S92000003,Scotland
-W92000004,Wales
-E12000001,North East
-E12000002,North West
-E12000003,Yorkshire and The Humber
-E12000004,East Midlands
-E12000005,West Midlands
-E12000006,East of England
-E12000007,London
-E12000008,South East
-E12000009,South West
-E10000003,Cambridgeshire
-E10000006,Cumbria
-E10000007,Derbyshire
-E10000008,Devon
-E10000011,East Sussex
-E10000012,Essex
-E10000013,Gloucestershire
-E10000014,Hampshire
-E10000015,Hertfordshire
-E10000016,Kent
-E10000017,Lancashire
-E10000018,Leicestershire
-E10000019,Lincolnshire
-E10000020,Norfolk
-E10000023,North Yorkshire
-E10000024,Nottinghamshire
-E10000025,Oxfordshire
-E10000027,Somerset
-E10000028,Staffordshire
-E10000029,Suffolk
-E10000030,Surrey
-E10000031,Warwickshire
-E10000032,West Sussex
-E10000034,Worcestershire
 E06000001,Hartlepool
 E06000002,Middlesbrough
 E06000003,Redcar and Cleveland
@@ -348,6 +308,43 @@ E09000030,Tower Hamlets
 E09000031,Waltham Forest
 E09000032,Wandsworth
 E09000033,Westminster
+E10000003,Cambridgeshire
+E10000006,Cumbria
+E10000007,Derbyshire
+E10000008,Devon
+E10000011,East Sussex
+E10000012,Essex
+E10000013,Gloucestershire
+E10000014,Hampshire
+E10000015,Hertfordshire
+E10000016,Kent
+E10000017,Lancashire
+E10000018,Leicestershire
+E10000019,Lincolnshire
+E10000020,Norfolk
+E10000023,North Yorkshire
+E10000024,Nottinghamshire
+E10000025,Oxfordshire
+E10000027,Somerset
+E10000028,Staffordshire
+E10000029,Suffolk
+E10000030,Surrey
+E10000031,Warwickshire
+E10000032,West Sussex
+E10000034,Worcestershire
+E12000001,North East
+E12000002,North West
+E12000003,Yorkshire and The Humber
+E12000004,East Midlands
+E12000005,West Midlands
+E12000006,East of England
+E12000007,London
+E12000008,South East
+E12000009,South West
+E92000001,England
+K02000001,United Kingdom
+K03000001,Great Britain
+K04000001,England and Wales
 N09000001,Antrim and Newtownabbey
 N09000002,"Armagh City, Banbridge and Craigavon"
 N09000003,Belfast
@@ -359,6 +356,7 @@ N09000008,Mid and East Antrim
 N09000009,Mid Ulster
 N09000010,"Newry, Mourne and Down"
 N09000011,Ards and North Down
+N92000002,Northern Ireland
 S12000005,Clackmannanshire
 S12000006,Dumfries and Galloway
 S12000008,East Ayrshire
@@ -391,6 +389,7 @@ S12000047,Fife
 S12000048,Perth and Kinross
 S12000049,Glasgow City
 S12000050,North Lanarkshire
+S92000003,Scotland
 W06000001,Isle of Anglesey
 W06000002,Gwynedd
 W06000003,Conwy
@@ -413,3 +412,4 @@ W06000021,Monmouthshire
 W06000022,Newport
 W06000023,Powys
 W06000024,Merthyr Tydfil
+W92000004,Wales
