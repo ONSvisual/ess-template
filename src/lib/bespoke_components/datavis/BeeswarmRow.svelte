@@ -17,9 +17,9 @@ $: console.log(data);
 $: console.log(selectedIndicatorCalculations);
 $: console.log(maxPeriod);*/
 
-let width = 1000, height = 100;
+let width = 1000, height = 120;
 
-$: padding = {top: 35, right: 10, bottom: 5, left: 10};
+$: padding = {top: 40, right: 10, bottom: 20, left: 10};
 
 $: spaceForOutliers = 40;
 
