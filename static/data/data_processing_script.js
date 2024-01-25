@@ -109,20 +109,20 @@ async function processFiles(file_paths) {
 
         indicator_data = tmpFixForMissingVarName(indicator_data, code)
 
-        var fullCode = f.multiIndicatorCategory ? `${code}-${f.multiIndicatorCategory}` : code;
-        indicator_data.params({fullCode});
+        // var fullCode = f.multiIndicatorCategory ? `${code}-${f.multiIndicatorCategory}` : code;
+        indicator_data.params({code, multiIndicatorCategory: f.multiIndicatorCategory});
 
         indicator_data = indicator_data
-            .derive({code: (d, $) => $.fullCode});
+            .derive({code: aq.escape(d => f.multiIndicatorCategory ? `${code}-${d[f.multiIndicatorCategory]}` : code)})
 
         let indicator_metadata = indicator_data
             .select(...metadata_columns)
-            .derive({areacd: d => null})
-            .derive({code: (d, $) => $.fullCode})
+            .select(aq.not('areacd'))
+            .derive({code: aq.escape(d => f.multiIndicatorCategory ? `${code}-${d[f.multiIndicatorCategory]}` : code)})
 
         if (f.multiIndicatorCategory) {
             indicator_metadata = indicator_metadata
-                .derive({[f.multiIndicatorCategory]: d => null});
+                .select(aq.not(f.multiIndicatorCategory));
         }
 
         indicator_metadata = indicator_metadata
